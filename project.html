@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Disaster Management India</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <style>
+        /* CSS for Styling */
+        :root {
+            --primary-color: #004d99; /* Deep Blue for Government/Authority */
+            --secondary-color: #ff6600; /* Orange for Alert/Action */
+            --background-color: #f4f7f6; /* Light Grey Background */
+            --text-color: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 20px 5%;
+            text-align: center;
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2em;
+        }
+
+        .header p {
+            margin-top: 5px;
+            font-size: 1.1em;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        section {
+            background-color: var(--white);
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Disaster Types Table */
+        .disaster-table table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .disaster-table th, .disaster-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .disaster-table th {
+            background-color: #e6e6e6;
+            color: var(--text-color);
+            font-weight: bold;
+        }
+
+        /* Agency Table */
+        .agency-table table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 10px;
+        }
+
+        .agency-table td {
+            padding: 15px;
+            border-left: 5px solid var(--secondary-color);
+            background-color: #f0f8ff; /* Light blue tint */
+            vertical-align: top;
+        }
+
+        .agency-table strong {
+            color: var(--primary-color);
+            display: block;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        /* 4R Strategy Section */
+        .strategy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .strategy-card {
+            background-color: #eaf4ff;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .strategy-card h3 {
+            color: var(--secondary-color);
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+
+        /* Emergency Contacts */
+        .contact-table table {
+            width: 100%;
+            text-align: center;
+        }
+
+        .contact-table th, .contact-table td {
+            padding: 15px;
+            background-color: #fff0e6; /* Light orange tint */
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .contact-table th {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            font-size: 1.3em;
+        }
+
+        .contact-table td:nth-child(3) {
+            color: #d90000; /* Red color for actual numbers */
+            font-size: 1.4em;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            font-size: 0.9em;
+            margin-top: 30px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .strategy-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .disaster-table th, .disaster-table td {
+                padding: 8px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>🛣 India Road Disaster Management Portal</h1>
+        <p>A Coordinated Framework for Safe and Resilient Road Networks</p>
+    </div>
+
+    <div class="container">
+
+        <section class="disaster-table">
+            <h2>🚨 Understanding Road Disasters in India</h2>
+            <p>Road disasters encompass events that severely disrupt connectivity and threaten life, categorized into two main groups:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Type of Incident</th>
+                        <th>Primary Causes/Context</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Natural</strong> 🌊</td>
+                        <td>Floods, Cyclones & Landslides</td>
+                        <td>Heavy rainfall, storm surges, bridge collapses, and mountain blockages (Himalayas, Western Ghats).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Man-Made</strong> 💥</td>
+                        <td>Major Road Crashes & Chemical Spills</td>
+                        <td><strong>Over-Speeding</strong>, *Drunken Driving, **Distracted Driving*, and infrastructure failure due to poor maintenance.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="margin-top: 15px; font-style: italic;">Goal: Reduce road accident fatalities & injuries by 50% by 2030 (Stockholm Declaration commitment).</p>
+        </section>
+
+        <section class="agency-table">
+            <h2>🏛 Institutional Framework & Key Agencies</h2>
+            <p>Disaster Management is governed by the *Disaster Management Act, 2005*, establishing a tiered structure for response.</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <strong>National Disaster Management Authority (NDMA)</strong>
+                            <p><strong>Apex body</strong> for laying down policies, plans, and national guidelines. Oversees the National Disaster Response Force (NDRF).</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Ministry of Road Transport and Highways (MoRTH)</strong>
+                            <p>Central Ministry responsible for the sector-specific *Disaster Management Plan (DMP), focusing on restoring connectivity and applying the **'Build Back Better'* principle.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>National Disaster Response Force (NDRF)</strong>
+                            <p>*Specialised response force* for search, rescue, and relief. Deploys quick reaction teams for road clearance post-disaster.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>📋 The 4R Strategy for Road Disaster Management</h2>
+            <p>A continuous and integrated process covering the disaster management cycle:</p>
+            <div class="strategy-grid">
+                <div class="strategy-card">
+                    <h3>1. Risk Reduction & Prevention</h3>
+                    <p>Implementing disaster-resilient standards, rectifying accident-prone *"Black Spots"* on NHs, and enforcing stricter vehicle safety features.</p>
+                </div>
+                <div class="strategy-card">
+                    <h3>2. Preparedness</h3>
+                    <p>*Vulnerability Mapping* of bridges/stretches, *Pre-positioning* of heavy machinery (excavators, temporary bridges), and using Early Warning Systems (IMD/CWC).</p>
+                </div>
+                <div class="strategy-card">
+                    <h3>3. Response</h3>
+                    <p>Rapid activation and deployment of NDRF. Priority on *immediate restoration of traffic, clearing debris, plugging breaches, and providing **Emergency Care*.</p>
+                </div>
+                <div class="strategy-card">
+                    <h3>4. Recovery & Restoration</h3>
+                    <p>Swift damage assessment followed by reconstruction. Applying the *'Build Back Better' (BBB)* principle for long-term resilience.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-table">
+            <h2>📞 Emergency Contact & Resources (Immediate Action)</h2>
+            <p>Use these numbers to report an incident or seek immediate assistance on any road.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource</th>
+                        <th>Action</th>
+                        <th>Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>All-India Emergency Helpline</td>
+                        <td>Universal Emergency Response System</td>
+                        <td><strong>112</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Ambulance / Medical Emergency</td>
+                        <td>Immediate medical aid / Trauma Care</td>
+                        <td><strong>108</strong></td>
+                    </tr>
+                    <tr>
+                        <td>MoRTH / Highway Patrol</td>
+                        <td>Highway Advisory System / Local Road Management</td>
+                        <td><strong>1033</strong></td>
+                    </tr>
+                    <script>
+                         const toggleBtn = document.getElementById("toggleMode");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      toggleBtn.textContent = document.body.classList.contains("dark") ? "☀️ Light Mode" : "🌙 Dark Mode";
+    });
+
+                    </script>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Road Disaster Management Portal, Government of India Initiative. | Data source: NDMA, MoRTH. | For informational purposes only.</p>
+    </div>
+
+</body>
+</html>
